@@ -14,8 +14,10 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     db.open();
     db.transaction();
-        if ( MngrQuerys::createTables() == false )
+        if ( MngrQuerys::createTables() == false ){
             qCritical() << "Database is can not created.";
+            db.rollback();
+        }
     db.commit();
 
     ui->setupUi(this);
@@ -51,16 +53,12 @@ void MainWindow::on_actionAdd_triggered()
 
 void MainWindow::on_actionExit_triggered()
 {
-    QApplication::quit();
+    qApp ->quit();
 }
 
 void MainWindow::on_actionShowFind_triggered(bool checked)
 {
-    if(checked){
-        ui->LineEdit_Search->setVisible(true);
-    }else{
-        ui->LineEdit_Search->setVisible(false);
-    }
+    ui->LineEdit_Search->setVisible(checked);
 }
 
 void MainWindow::on_actionStaffManagement_triggered()

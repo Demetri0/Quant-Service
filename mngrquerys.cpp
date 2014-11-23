@@ -185,10 +185,6 @@ bool MngrQuerys::update(const Tables::table table, const QMap<QString, QVariant>
     return ok;
 }
 
-MngrQuerys::MngrQuerys()
-{
-}
-
 bool MngrQuerys::createTables()
 {
     bool isOk = true;

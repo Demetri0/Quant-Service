@@ -20,8 +20,6 @@ private:
     static bool createTable(const QString, const QMap<QString, QString> fieldsAndTypes);
     static bool createTable(const Tables::table);
 public:
-    MngrQuerys();
-
     static bool createTables();
     static QString getTableName(const Tables::table table);
     static QMap<qint64, QString> getMasters();
