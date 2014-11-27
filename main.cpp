@@ -64,7 +64,7 @@ int main(int argc, char *argv[])
     app.setOrganizationName("Kvant");
     app.setOrganizationDomain("https://github.com/Demetri0");
     app.setApplicationName("QuantService");
-    app.setApplicationVersion("0.0.0 Pre-Alpha");
+    app.setApplicationVersion("0.6.0");
     app.setApplicationDisplayName( QObject::tr("Quant Service") );
 //    app.setWindowIcon( QIcon("://images/DBA_Icon.png") );
 
@@ -80,6 +80,8 @@ int main(int argc, char *argv[])
                              + QApplication::applicationName() + QDir::separator()
                              );
 
+    qDebug() << sharePath;
+    qDebug() << sharePath + "l10n" + QDir::separator() + "QuantService_" + QLocale::system().name().section('_', 0, 0) + ".qm";
     if( set_language_index == 0 ){
         /*, QLibraryInfo::location(QLibraryInfo::TranslationsPath)*/
         qtTr.load( sharePath + "l10n" + QDir::separator()
