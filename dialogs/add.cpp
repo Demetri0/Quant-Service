@@ -53,17 +53,6 @@ DialogAdd::DialogAdd(QWidget *parent) :
     ui->dateTimeEdit->setDateTime( QDateTime::currentDateTime() );
     ui->dateTimeEdit_2->setDateTime( QDateTime::currentDateTime().addDays(1) );
 
-
-
-    /*
-    QMap<QString, QVariant> MasterList;
-    MasterList["FirstName"] = "Максим";
-    MasterList["LastName"] = "Шапилявин";
-    MngrQuerys::insert(Tables::master, MasterList);
-    MasterList["FirstName"] = "Артём";
-    MasterList["LastName"] = "Погорелов";
-    MngrQuerys::insert(Tables::master, MasterList);
-    */
     {
         ui->ComboBox_Status->addItem(tr("Open"),Status::open);
         ui->ComboBox_Status->addItem(tr("Close"),Status::close);
