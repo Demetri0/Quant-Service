@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Добавление</string>
+   <string>Adding</string>
   </property>
   <property name="modal">
    <bool>false</bool>
@@ -23,12 +23,12 @@
       <widget class="QComboBox" name="ComboBox_Warranty">
        <item>
         <property name="text">
-         <string>Платный ремонт</string>
+         <string>Payed</string>
         </property>
        </item>
        <item>
         <property name="text">
-         <string>Гарантия</string>
+         <string>Garant</string>
         </property>
        </item>
       </widget>
@@ -90,7 +90,7 @@
      <item>
       <widget class="QGroupBox" name="GBox_Kontragent">
        <property name="title">
-        <string>Владелец изделия</string>
+        <string>Owner:</string>
        </property>
        <layout class="QHBoxLayout" name="horizontalLayout_7">
         <item>
@@ -102,7 +102,7 @@
            <bool>true</bool>
           </property>
           <property name="placeholderText">
-           <string>Контрагент</string>
+           <string>User</string>
           </property>
           <property name="clearButtonEnabled">
            <bool>true</bool>
@@ -115,7 +115,7 @@
            <bool>true</bool>
           </property>
           <property name="placeholderText">
-           <string>Телефон</string>
+           <string>Phone</string>
           </property>
           <property name="clearButtonEnabled">
            <bool>true</bool>
@@ -128,7 +128,7 @@
            <bool>true</bool>
           </property>
           <property name="placeholderText">
-           <string>Адрес</string>
+           <string>Address</string>
           </property>
           <property name="clearButtonEnabled">
            <bool>true</bool>
@@ -143,7 +143,7 @@
    <item>
     <widget class="QGroupBox" name="groupBox_2">
      <property name="title">
-      <string>Изделие</string>
+      <string>Product:</string>
      </property>
      <layout class="QVBoxLayout" name="verticalLayout_2">
       <item>
@@ -151,7 +151,7 @@
         <item>
          <widget class="QLabel" name="Label_Model">
           <property name="text">
-           <string>Модель:</string>
+           <string>Model:</string>
           </property>
          </widget>
         </item>
@@ -161,7 +161,7 @@
         <item>
          <widget class="QLabel" name="Label_SerialNumber">
           <property name="text">
-           <string>Серийный номер:</string>
+           <string>Serial number:</string>
           </property>
          </widget>
         </item>
@@ -177,7 +177,7 @@
         </property>
         <widget class="QWidget" name="Tab_Priem">
          <attribute name="title">
-          <string>Приём</string>
+          <string>Get</string>
          </attribute>
          <layout class="QVBoxLayout" name="verticalLayout_5">
           <item>
@@ -192,7 +192,7 @@
             <item row="0" column="0">
              <widget class="QLabel" name="label">
               <property name="text">
-               <string>Склад:</string>
+               <string>Storage:</string>
               </property>
              </widget>
             </item>
@@ -212,7 +212,7 @@
                </sizepolicy>
               </property>
               <property name="title">
-               <string>Внешний вид</string>
+               <string>Visual</string>
               </property>
               <layout class="QVBoxLayout" name="verticalLayout">
                <property name="leftMargin">
@@ -235,16 +235,22 @@
                 </widget>
                </item>
                <item>
-                <widget class="QCheckBox" name="checkBox_4">
+                <widget class="QLabel" name="label_2">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
                  <property name="text">
-                  <string>CheckBox</string>
+                  <string/>
                  </property>
                 </widget>
                </item>
                <item>
                 <widget class="QLineEdit" name="LineEdit_Appearance">
                  <property name="placeholderText">
-                  <string>Дополнительно</string>
+                  <string>Additional</string>
                  </property>
                 </widget>
                </item>
@@ -260,7 +266,7 @@
                </sizepolicy>
               </property>
               <property name="title">
-               <string>Комлектация</string>
+               <string>Complectation</string>
               </property>
               <layout class="QVBoxLayout" name="verticalLayout_4">
                <property name="leftMargin">
@@ -278,21 +284,21 @@
                <item>
                 <widget class="QCheckBox" name="checkBox_2">
                  <property name="text">
-                  <string>Зарядное устройство</string>
+                  <string>Accumulator rectifier</string>
                  </property>
                 </widget>
                </item>
                <item>
                 <widget class="QCheckBox" name="checkBox_3">
                  <property name="text">
-                  <string>Чехол / упаковка</string>
+                  <string>Package</string>
                  </property>
                 </widget>
                </item>
                <item>
                 <widget class="QLineEdit" name="LineEdit_Package">
                  <property name="placeholderText">
-                  <string>Дополнительно</string>
+                  <string>Additional</string>
                  </property>
                 </widget>
                </item>
@@ -305,13 +311,13 @@
         </widget>
         <widget class="QWidget" name="Tab_Viezd">
          <attribute name="title">
-          <string>Выезд</string>
+          <string>Out</string>
          </attribute>
          <layout class="QVBoxLayout" name="verticalLayout_6">
           <item>
            <widget class="QLineEdit" name="lineEdit">
             <property name="placeholderText">
-             <string>Адрес</string>
+             <string>Address</string>
             </property>
            </widget>
           </item>
@@ -338,7 +344,7 @@
          <bool>true</bool>
         </property>
         <property name="placeholderText">
-         <string>Заявленный дефект</string>
+         <string>Deffect</string>
         </property>
         <property name="clearButtonEnabled">
          <bool>true</bool>
@@ -353,7 +359,7 @@
      <item>
       <widget class="QLabel" name="Lbl_Artist">
        <property name="text">
-        <string>Исполнитель:</string>
+        <string>Master:</string>
        </property>
       </widget>
      </item>
@@ -388,7 +394,7 @@
    <item>
     <widget class="QCheckBox" name="CheckBox_ReportCost">
      <property name="text">
-      <string>Сообщить о цене заранее</string>
+      <string>To report about the price in advance</string>
      </property>
     </widget>
    </item>
@@ -414,63 +420,6 @@
       <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
      </property>
     </widget>
-   </item>
-   <item>
-    <layout class="QHBoxLayout" name="horizontalLayout_2">
-     <property name="topMargin">
-      <number>0</number>
-     </property>
-     <item>
-      <spacer name="horizontalSpacer_2">
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
-       </property>
-       <property name="sizeHint" stdset="0">
-        <size>
-         <width>40</width>
-         <height>20</height>
-        </size>
-       </property>
-      </spacer>
-     </item>
-     <item>
-      <widget class="QPushButton" name="PBtn_Print">
-       <property name="enabled">
-        <bool>false</bool>
-       </property>
-       <property name="text">
-        <string>Печать</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="PBtn_Ok">
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>Ок</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="PBtn_Write">
-       <property name="text">
-        <string>Записать</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="PBtn_Close">
-       <property name="text">
-        <string>Закрыть</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
    </item>
   </layout>
  </widget>

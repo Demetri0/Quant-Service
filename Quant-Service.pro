@@ -34,3 +34,6 @@ FORMS    += mainwindow.ui \
 
 RESOURCES += \
     resource.qrc
+
+TRANSLATIONS += \
+    Quant-Service_ru.ts

@@ -49,6 +49,7 @@ void MainWindow::on_actionAdd_triggered()
 {
     DialogAdd *add = new DialogAdd(this);
     add->exec();
+    _tableModelAll.select();
 }
 
 void MainWindow::on_actionExit_triggered()
