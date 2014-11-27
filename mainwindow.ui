@@ -82,10 +82,6 @@
    <addaction name="actionEdit"/>
    <addaction name="actionRemove"/>
    <addaction name="separator"/>
-   <addaction name="actionCreateReport"/>
-   <addaction name="actionShowFind"/>
-   <addaction name="separator"/>
-   <addaction name="actionDlgSettings"/>
   </widget>
   <widget class="QStatusBar" name="StatusBar"/>
   <action name="actionAdd">
@@ -158,6 +154,24 @@
     <string>Ctrl+Q</string>
    </property>
   </action>
+  <action name="actionStaffManagement">
+   <property name="text">
+    <string>Staff...</string>
+   </property>
+  </action>
+  <action name="actionStorageManagement">
+   <property name="text">
+    <string>Storage...</string>
+   </property>
+  </action>
+  <action name="actionModelsManagement">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Models...</string>
+   </property>
+  </action>
   <action name="actionCreateReport">
    <property name="icon">
     <iconset theme="document">
@@ -188,24 +202,6 @@
    </property>
    <property name="shortcut">
     <string>Ctrl+F</string>
-   </property>
-  </action>
-  <action name="actionStaffManagement">
-   <property name="text">
-    <string>Staff...</string>
-   </property>
-  </action>
-  <action name="actionStorageManagement">
-   <property name="text">
-    <string>Storage...</string>
-   </property>
-  </action>
-  <action name="actionModelsManagement">
-   <property name="enabled">
-    <bool>false</bool>
-   </property>
-   <property name="text">
-    <string>Models...</string>
    </property>
   </action>
  </widget>
